@@ -42,6 +42,25 @@
       </section>
     </main>
 
+    <div id="auth-modal" class="modal hidden">
+    <div class="modal-content">
+        <span id="close-auth" class="close-btn">&times;</span>
+        <h2 id="auth-title">Login to ShowTraxer</h2>
+        
+        <form id="auth-form">
+            <input type="text" id="auth-name" placeholder="Full Name" class="hidden">
+            <input type="email" id="auth-email" placeholder="Email" required>
+            <input type="password" id="auth-password" placeholder="Password" required>
+            <button type="submit" id="auth-submit">Login</button>
+        </form>
+        
+        <p class="auth-toggle-text">
+            <span id="auth-prompt">Don't have an account?</span> 
+            <a href="#" id="toggle-auth-mode">Register here</a>
+        </p>
+        <p id="auth-error" class="error-text hidden"></p>
+    </div>
+</div>
     <script src="js/appwrite.js"></script>
     <script src="js/auth.js"></script>
     <script src="js/tvmaze.js"></script>
