@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShowTraxer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@13.0.1"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>ShowTraxer</h1>
+      <ul class="nav-links">
+        <li><a href="#" data-target="dashboard">Dashboard</a></li>
+        <li><a href="#" data-target="search">Search</a></li>
+        <li><a href="#" data-target="help">Help</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle">☀️/🌙</button>
+        <button id="auth-btn">Login</button>
+      </div>
+    </nav>
+
+    <main id="app-content">
+      <section id="dashboard" class="page active">
+        <h2>Your Tracked Shows</h2>
+        <div id="tracked-shows-grid" class="grid"></div>
+      </section>
+
+      <section id="search" class="page hidden">
+        <h2>Find a Show</h2>
+        <input type="text" id="search-input" placeholder="Enter show name..." />
+        <button id="search-btn">Search</button>
+        <div id="search-results" class="grid"></div>
+      </section>
+
+      <section id="help" class="page hidden">
+        <h2>How to use ShowTraxer</h2>
+        <p>1. Search for your favorite shows.</p>
+        <p>2. Click 'Track' to add them to your dashboard.</p>
+        <p>3. Watch your dashboard for upcoming episode alerts!</p>
+      </section>
+    </main>
+
+    <script src="js/appwrite.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/tvmaze.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
