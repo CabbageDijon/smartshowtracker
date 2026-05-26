@@ -6,7 +6,7 @@ const { Client, Account, Databases, ID, Query } = Appwrite;
 // Initialize the Appwrite Client
 const client = new Client()
   .setEndpoint("https://appwrite.showtrax.duckdns.org/v1") // e.g., https://appwrite.yourdomain.com/v1
-  .setProject("[6a149322003e7c989cf3]"); // e.g., 65a8f9b...
+  .setProject("6a14938000305b4a32b9");
 
 // Initialize the services we will use
 const account = new Account(client);
