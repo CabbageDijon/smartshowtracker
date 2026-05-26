@@ -6,15 +6,15 @@ const { Client, Account, Databases, ID, Query } = Appwrite;
 // Initialize the Appwrite Client
 const client = new Client()
   .setEndpoint("https://appwrite.showtrax.duckdns.org/v1") // e.g., https://appwrite.yourdomain.com/v1
-  .setProject("6a14938000305b4a32b9");
+  .setProject("6a149322003e7c989cf3");
 
 // Initialize the services we will use
 const account = new Account(client);
 const databases = new Databases(client);
 
 // Constants for your database (You'll need these in the next phase)
-const DATABASE_ID = "[6a14938000305b4a32b9]";
-const COLLECTION_ID = "[6a14938900324aa39879]";
+const DATABASE_ID = "6a14938000305b4a32b9";
+const COLLECTION_ID = "6a14938900324aa39879";
 
 async function trackShowToDatabase(e) {
   // 1. Enforce Authentication
